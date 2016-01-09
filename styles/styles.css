@@ -1,0 +1,371 @@
+@font-face {
+  font-family: SlimTony;
+  /* Гарнитура шрифта */
+  src: url(../fonts/SlimTony.otf);
+  /* Для IE5-8 */
+  src: local(pompadur), url(../fonts/SlimTony.otf);
+  /* Для остальных браузеров */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body p {
+  font-family: helterskelter;
+}
+body h1,
+body h2 {
+  font-family: sans-serif;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+header,
+.about,
+.services,
+.lookbook,
+.reservations,
+footer {
+  padding: 2% 10%;
+}
+.first-full-width,
+.second-full-width,
+.third-full-width {
+  min-width: 100%;
+}
+.title-and-line p {
+  text-transform: uppercase;
+  border-bottom: 2px solid #fbdc00;
+  padding: 1% 0;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-family: sans-serif;
+}
+.margin {
+  margin-bottom: 3%;
+}
+header .logo {
+  display: inline-block;
+}
+header .logo .logo-img {
+  padding-right: 10px;
+}
+header .header-nav {
+  float: right;
+}
+header .header-nav li {
+  display: inline;
+  line-height: 40px;
+  padding-left: 10px;
+  margin: 5px;
+}
+header .header-nav li:hover {
+  border-left: 2px solid #fbdc00;
+}
+header .header-nav a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 980px) {
+  header {
+    text-align: center;
+  }
+  header .logo {
+    display: none;
+  }
+  header .header-nav {
+    float: none;
+  }
+  header .header-nav li {
+    line-height: 20px;
+    font-weight: bold;
+  }
+}
+.first-full-width {
+  background: url("../images/background-first.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+.first-full-width .content {
+  padding: 15% 0;
+  text-align: center;
+}
+.first-full-width .content h1 {
+  color: #fff;
+  font-size: 4em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.first-full-width .content .barber-font {
+  font-family: "SlimTony", sans-serif;
+  font-size: 6em;
+  text-transform: none;
+  margin-top: 0;
+}
+@media screen and (max-width: 570px) {
+  .first-full-width .content h1 {
+    font-size: 2em;
+  }
+  .first-full-width .content .barber-font {
+    font-size: 3em;
+  }
+}
+.about .about-column {
+  display: inline-block;
+  width: 31%;
+  margin-top: 20px;
+}
+.about .about-column p {
+  color: #8e8e8e;
+}
+.about .about-column .quotes {
+  font-size: 4rem;
+  color: #fbdc00;
+  display: block;
+  line-height: 2px;
+}
+.about .about-column .about-masters {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.about .middle {
+  margin: 0 3%;
+}
+@media screen and (max-width: 1125px) {
+  .about #masters {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .about #masters .quotes {
+    font-size: 3rem;
+  }
+  .about #media {
+    width: 46%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .about #masters {
+    width: 100%;
+  }
+  .about #media {
+    width: 100%;
+  }
+}
+.second-full-width {
+  padding-right: 10%;
+  background: url("../images/background-second.jpg") no-repeat fixed center;
+  background-size: cover;
+  min-height: 100%;
+  position: relative;
+}
+.second-full-width .vertical-text {
+  float: right;
+  margin: 20% 5%;
+  width: 1px;
+}
+.second-full-width .vertical-text p {
+  display: block;
+  white-space: pre;
+  bottom: -210px;
+  line-height: 25px;
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: bold;
+  position: relative;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.second-full-width .vertical-text p .underline {
+  border-bottom: 8px solid #fbdc00;
+  padding-bottom: 8px;
+}
+@media screen and (max-width: 980px) {
+  .second-full-width .vertical-text p {
+    bottom: -150px;
+    line-height: 20px;
+    font-size: 2.1em;
+  }
+}
+@media screen and (max-width: 680px) {
+  .second-full-width .vertical-text p {
+    left: -270px;
+    top: -10px;
+    line-height: 15px;
+    font-size: 1.5em;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+@media screen and (max-width: 340px) {
+  .second-full-width .vertical-text p {
+    left: -170px;
+    font-size: 1em;
+  }
+}
+.services .services-single {
+  width: 22%;
+  display: inline-block;
+  margin-right: 3%;
+}
+.services .services-single p {
+  color: #8e8e8e;
+}
+.services .services-single h2 {
+  white-space: pre;
+  font-weight: normal;
+  font-size: 2.5rem;
+  padding: 8% 0;
+}
+.services .no-margin {
+  margin-right: 0;
+}
+@media screen and (max-width: 980px) {
+  .services .services-single h2 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  .services .services-single {
+    width: 46%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .services .services-single {
+    width: 100%;
+  }
+}
+.lookbook .lookbook-content img {
+  -webkit-filter: brightness(70%);
+}
+.lookbook .lookbook-content img:hover {
+  -webkit-filter: brightness(100%);
+}
+.lookbook .lookbook-content .big-img {
+  float: left;
+  width: 40%;
+}
+.lookbook .lookbook-content .small-img {
+  float: left;
+  width: 30%;
+}
+.lookbook .lookbook-content .middle-img {
+  float: left;
+  width: 60%;
+}
+@media screen and (max-width: 570px) {
+  .lookbook .lookbook-content .big-img {
+    display: none;
+  }
+  .lookbook .lookbook-content .small-img {
+    width: 50%;
+  }
+  .lookbook .lookbook-content .middle-img {
+    width: 100%;
+  }
+}
+.reservations .reservation-input {
+  display: inline-block;
+  width: 30%;
+}
+.reservations .reservation-input input {
+  border: 2px solid #ececec;
+  height: 36px;
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+}
+.reservations .reservation-text-area {
+  display: inline-block;
+  width: 65%;
+}
+.reservations .reservation-text-area textarea {
+  width: 100%;
+  border: 2px solid #ececec;
+  padding: 5px 10px;
+  margin-left: 10px;
+  color: #abadb0;
+}
+.reservations .submit {
+  width: 15%;
+  height: 35px;
+  background: #fbdc00;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 680px) {
+  .reservations .reservation-input {
+    display: block;
+    width: 100%;
+  }
+  .reservations .reservation-text-area {
+    width: 100%;
+  }
+  .reservations .reservation-text-area textarea {
+    margin-left: 0;
+  }
+  .reservations .submit {
+    width: 30%;
+    height: 45px;
+    margin: 2% 35%;
+  }
+}
+footer {
+  background: #000;
+}
+footer .logo {
+  display: inline-block;
+}
+footer .logo .logo-img {
+  padding-right: 10px;
+}
+footer .header-nav {
+  float: right;
+}
+footer .header-nav li {
+  display: inline;
+  line-height: 40px;
+  padding-left: 10px;
+  margin: 5px;
+}
+footer .header-nav li:hover {
+  border-left: 2px solid #fbdc00;
+}
+footer .header-nav a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 980px) {
+  footer {
+    text-align: center;
+  }
+  footer .logo {
+    display: none;
+  }
+  footer .header-nav {
+    float: none;
+  }
+  footer .header-nav li {
+    line-height: 20px;
+  }
+}
